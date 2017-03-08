@@ -3,9 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Melissa%20Case/Documents/NetBeansProjects/dog/src/doggie.java</file>
-            <file>file:/C:/Users/Melissa%20Case/Documents/NetBeansProjects/dog/src/Dog.java</file>
-            <file>file:/C:/Users/Melissa%20Case/Documents/NetBeansProjects/dog/src/hibernate.hbm.xml</file>
+            <file>file:/C:/Users/mcase/Documents/NetBeansProjects/360-02-master/dog/src/dog/Dog.java</file>
+            <file>file:/C:/Users/mcase/Documents/NetBeansProjects/360-02-master/dog/src/doggie.java</file>
+            <file>file:/C:/Users/mcase/Documents/NetBeansProjects/360-02-master/dog/src/hibernate.hbm.xml</file>
+            <file>file:/C:/Users/mcase/Documents/NetBeansProjects/360-02-master/dog/src/HibernateUtil.java</file>
+            <file>file:/C:/Users/mcase/Documents/NetBeansProjects/360-02-master/dog/src/hibernate.cfg.xml</file>
+            <file>file:/C:/Users/mcase/Documents/NetBeansProjects/360-02-master/dog/src/hibernate.reveng.xml</file>
         </group>
     </open-files>
 </project-private>

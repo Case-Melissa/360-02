@@ -5,8 +5,7 @@
  */
 
 import dog.Dog;
-import org.hibernate.cfg.AnnotationConfiguration;
-import org.hibernate.SessionFactory;
+import static java.time.Clock.system;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
@@ -15,6 +14,7 @@ import net.sf.ehcache.hibernate.HibernateUtil;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+
 /**
  * Hibernate Utility class with a convenient method to get Session Factory
  * object.
@@ -26,7 +26,7 @@ public class doggie {
     private static void main(String[] args) {
         java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.SEVERE);
         
-        Scanner input = new Scaner(system.in);
+        Scanner input = new Scanner(System.in);
         
         String dogList = "\n"
                 + "\n***********************************"
@@ -105,7 +105,7 @@ public class doggie {
             System.out.println("dogId\tDogName");
             System.out.println("************************************");
             for (Iterator iterator = dog.iterator(); iterator.hasNext();){
-                Dog dog = (dog) iterator.next();
+                Dog dog = (dog)iterator.next();
                 System.out.println(dog.getdogId() + "\t" + dog.getName());
             }
             tr.commit();
@@ -125,14 +125,81 @@ public class doggie {
             tr = session.beginTransaction();
             dog = (Dog)session.get(Dog.class, dogId);
             tr.commit();
-        } catch(Exception ex) {
+        } catch(HibernateException ex) {
             if(tr!=null) tr.rollback();
-            e.printStackTrace();
+            ex.printStackTrace();
         } finally {
             session.close();
         }
         return dog;
     }
-    public static Dog get
+    private static Dog detailDog(Integer dogId) {
+        Dog dog = getDog(dogId);
+        System.out.println("ID: "+ dog.getdogId());
+        System.out.println("Name: " + dog.getName());
+        System.out.println("Breed: " + dog.getBreed());
+        System.out.println("Age: " + dog.getAge());
+    }
     
-}
+    private static Integer addDog(String name, String breed, String age){
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction tr = null;
+        Integer dogId = null;
+        
+        try{
+            tr = session.beginTransaction();
+            Dog dog = new Dog(name, breed, age);
+            dogId = (Integer) session.save(dog);
+            tr.commit();
+        }catch (HibernateException ex){
+            if(tr!=null) tr.rollback();
+            ex.printStackTrace();
+        }finally {
+            session.close();
+        }
+        return dogId;
+    }
+    private static void updateDog(Integer dogId, String field, String value){
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction tr = null;
+        Dog dog = getDog(dogId);
+        switch(field){
+            case "name" :
+                dog.setName(value);
+                break;
+            case "breed" :
+                dog.setBreed(value);
+                break;
+            case "age" :
+                dog.setAge(value);
+                break;
+        }
+        try {
+            tr = session.beginTransaction();
+            session.update(dog);
+            tr.commit();
+        }catch (HibernateException ex){
+            if (tr!=null) tr.rollback();
+            ex.printStackTrace();
+        }finally{
+            session.close();
+        }
+    }
+    private static void deleteDog(Integer dogId) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction tr = null;
+        Dog dog = getDog(dogId);
+ try{
+     tr = session.beginTransaction();
+     session.delete(dog);
+     tr.commit();
+ } catch (HibernateException ex){
+     if(tr!=null) tr.rollback();
+     ex.printStackTrace();
+ }finally{
+     session.close();
+ }
+    }
+ 
+    }
+
