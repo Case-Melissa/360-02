@@ -133,6 +133,6 @@ public class doggie {
         }
         return dog;
     }
-    
+    public static Dog get
     
 }
