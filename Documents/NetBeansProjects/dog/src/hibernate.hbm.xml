@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="false" dynamic-update="false" mutable="true" name="dog" optimistic-lock="version" polymorphism="implicit" select-before-update="false"/>
+  <class name="dog" table="dog" catalog="mysql" optimistic-lock="version">
+     <id name="dogId" type="jave.lang.Integer">
+      <column name="dogId" />
+     <generator class="identity" /> 
+     </id>
+     <property name="name" type="string">
+         <column name="name" length="30" not-null="true />
+     </property>
+     <property name="breed" type="string">
+         <column name="breed" length="30" not-null="true />
+     </property>
+     <property name="age" type="integer">
+         <column name="age" not-null="true />
+     </property>
+  </class>
+</hibernate-mapping>
