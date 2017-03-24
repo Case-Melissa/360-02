@@ -73,14 +73,14 @@ public class DeleteLibrarian extends JFrame {
                         }
                     }
                 });
-		btnDelete.setFont(new Font("Sans Serif", Font.PLAIN, 13));
+		btnDelete.setFont(new Font("Sans-Serif", Font.PLAIN, 13));
 		
 		JButton btnNewButton = new JButton("Back");
 		btnNewButton.addActionListener((ActionEvent e) -> {
                     AdminSuccess.main(new String[]{});
                     frame.dispose();
                 });
-		btnNewButton.setFont(new Font("Sans Serif", Font.PLAIN, 13));
+		btnNewButton.setFont(new Font("Sans-Serif", Font.PLAIN, 13));
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)

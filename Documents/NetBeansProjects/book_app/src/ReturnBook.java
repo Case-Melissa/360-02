@@ -61,7 +61,7 @@ public class ReturnBook extends JFrame {
 		
 		JLabel lblReturnBook = new JLabel("Return Book");
 		lblReturnBook.setForeground(Color.BLUE);
-		lblReturnBook.setFont(new Font("Sans Serif", Font.PLAIN, 18));
+		lblReturnBook.setFont(new Font("Sans-Serif", Font.PLAIN, 18));
 		
 		JLabel lblBookCallno = new JLabel("Book Callno:");
 		
@@ -92,7 +92,7 @@ public class ReturnBook extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("Note: Check the book properly!");
 		lblNewLabel.setForeground(Color.RED);
-		lblNewLabel.setFont(new Font("Sans Serif", Font.PLAIN, 13));
+		lblNewLabel.setFont(new Font("Sans-Serif", Font.PLAIN, 13));
 		
 		JButton btnBack = new JButton("Back");
 		btnBack.addActionListener(new ActionListener() {

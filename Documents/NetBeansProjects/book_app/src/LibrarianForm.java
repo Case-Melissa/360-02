@@ -64,7 +64,7 @@ public class LibrarianForm extends JFrame {
 		
 		JLabel lblAddLibrarian = new JLabel("Add Librarian");
 		lblAddLibrarian.setForeground(Color.BLUE);
-		lblAddLibrarian.setFont(new Font("Sans Serif", Font.PLAIN, 22));
+		lblAddLibrarian.setFont(new Font("Sans-Serif", Font.PLAIN, 22));
 		
 		JLabel lblName = new JLabel("Name:");
 		

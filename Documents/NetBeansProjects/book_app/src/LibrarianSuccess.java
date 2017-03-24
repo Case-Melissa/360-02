@@ -55,7 +55,7 @@ public class LibrarianSuccess extends JFrame {
 		setContentPane(contentPane);
 		
 		JLabel lblLibrarianSection = new JLabel("Librarian Section - JavaTpoint");
-		lblLibrarianSection.setFont(new Font("Sans Serif", Font.PLAIN, 22));
+		lblLibrarianSection.setFont(new Font("Sans-Serif", Font.PLAIN, 22));
 		
 		JButton btnNewButton = new JButton("Add Books");
 		btnNewButton.addActionListener(new ActionListener() {
@@ -64,7 +64,7 @@ public class LibrarianSuccess extends JFrame {
 			frame.dispose();
 			}
 		});
-		btnNewButton.setFont(new Font("Sans Serif", Font.PLAIN, 13));
+		btnNewButton.setFont(new Font("Sans-Serif", Font.PLAIN, 13));
 		
 		JButton btnViewBooks = new JButton("View Books");
 		btnViewBooks.addActionListener(new ActionListener() {
@@ -72,7 +72,7 @@ public class LibrarianSuccess extends JFrame {
 				ViewBooks.main(new String[]{});
 			}
 		});
-		btnViewBooks.setFont(new Font("Sans Serif", Font.PLAIN, 13));
+		btnViewBooks.setFont(new Font("Sans-Serif", Font.PLAIN, 13));
 		
 		JButton btnIssueBook = new JButton("Issue Book");
 		btnIssueBook.addActionListener(new ActionListener() {
@@ -81,7 +81,7 @@ public class LibrarianSuccess extends JFrame {
 				frame.dispose();
 			}
 		});
-		btnIssueBook.setFont(new Font("Sans Serif", Font.PLAIN, 13));
+		btnIssueBook.setFont(new Font("Sans-Serif", Font.PLAIN, 13));
 		
 		JButton btnViewIssuedBooks = new JButton("View Issued Books");
 		btnViewIssuedBooks.addActionListener(new ActionListener() {
@@ -89,7 +89,7 @@ public class LibrarianSuccess extends JFrame {
 				ViewIssuedBooks.main(new String[]{});
 			}
 		});
-		btnViewIssuedBooks.setFont(new Font("Sans Serif", Font.PLAIN, 13));
+		btnViewIssuedBooks.setFont(new Font("Sans-Serif", Font.PLAIN, 13));
 		
 		JButton btnReturnBook = new JButton("Return Book");
 		btnReturnBook.addActionListener(new ActionListener() {
@@ -98,7 +98,7 @@ public class LibrarianSuccess extends JFrame {
 				frame.dispose();
 			}
 		});
-		btnReturnBook.setFont(new Font("Sans Serif", Font.PLAIN, 13));
+		btnReturnBook.setFont(new Font("Sans-Serif", Font.PLAIN, 13));
 		
 		JButton btnLogout = new JButton("Logout");
 		btnLogout.addActionListener(new ActionListener() {
@@ -107,7 +107,7 @@ public class LibrarianSuccess extends JFrame {
 				frame.dispose();
 			}
 		});
-		btnLogout.setFont(new Font("Sans Serif", Font.PLAIN, 13));
+		btnLogout.setFont(new Font("Sans-Serif", Font.PLAIN, 13));
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)

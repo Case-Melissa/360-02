@@ -55,7 +55,7 @@ public class Library extends JFrame {
 		setContentPane(contentPane);
 		
 		JLabel lblLibraryManagement = new JLabel("Library Management - JavaTpoint");
-		lblLibraryManagement.setFont(new Font("Sans Serif", Font.PLAIN, 18));
+		lblLibraryManagement.setFont(new Font("Sans-Serif", Font.PLAIN, 18));
 		lblLibraryManagement.setForeground(Color.BLUE);
 		
 		JButton btnAdminLogin = new JButton("Admin Login");
@@ -65,7 +65,7 @@ public class Library extends JFrame {
 			frame.dispose();
 			}
 		});
-		btnAdminLogin.setFont(new Font("Sans Serif", Font.PLAIN, 15));
+		btnAdminLogin.setFont(new Font("Sans-Serif", Font.PLAIN, 15));
 		
 		JButton btnLibrarianLogin = new JButton("Librarian Login");
 		btnLibrarianLogin.addActionListener(new ActionListener() {
@@ -73,7 +73,7 @@ public class Library extends JFrame {
 				LibrarianLogin.main(new String[]{});
 			}
 		});
-		btnLibrarianLogin.setFont(new Font("Sans Serif", Font.PLAIN, 15));
+		btnLibrarianLogin.setFont(new Font("Sans-Serif", Font.PLAIN, 15));
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)

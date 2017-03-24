@@ -62,7 +62,7 @@ public class IssueBookForm extends JFrame {
 		setContentPane(contentPane);
 		
 		JLabel lblNewLabel = new JLabel("Issue Book ");
-		lblNewLabel.setFont(new Font("Sans Serif", Font.PLAIN, 18));
+		lblNewLabel.setFont(new Font("Sans-Serif", Font.PLAIN, 18));
 		lblNewLabel.setForeground(Color.BLUE);
 		
 		JLabel lblBookName = new JLabel("Book Callno:");
@@ -122,7 +122,7 @@ public class IssueBookForm extends JFrame {
 		});
 		
 		JLabel lblNewLabel_1 = new JLabel("Note: Please check Student ID Carefully before issuing book!");
-		lblNewLabel_1.setFont(new Font("Sans Serif", Font.PLAIN, 13));
+		lblNewLabel_1.setFont(new Font("Sans-Serif", Font.PLAIN, 13));
 		lblNewLabel_1.setForeground(Color.RED);
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
