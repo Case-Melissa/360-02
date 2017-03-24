@@ -54,7 +54,7 @@ public class Library extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
-		JLabel lblLibraryManagement = new JLabel("Library Management - JavaTpoint");
+		JLabel lblLibraryManagement = new JLabel("Library Console");
 		lblLibraryManagement.setFont(new Font("Sans-Serif", Font.PLAIN, 18));
 		lblLibraryManagement.setForeground(Color.BLUE);
 		
