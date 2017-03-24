@@ -105,7 +105,7 @@ public class BooksForm extends JFrame {
                     String genre=textField_4.getText();
                     String squantity=textField_5.getText();
                     int quantity=Integer.parseInt(squantity);
-                    int i = BookDb.save(callno, name1, author, publisher, quantity);
+                    int i = BookDb.save(callno, name1, author, publisher, genre, quantity);
                     if(i>0){
                         JOptionPane.showMessageDialog(BooksForm.this,"Books added successfully!");
                         LibrarianSuccess.main(new String[]{});

@@ -66,7 +66,7 @@ public class AdminSuccess extends JFrame {
 		btnViewLibrarian.addActionListener((ActionEvent arg0) -> {
                     ViewLibrarian.main(new String[]{});
                 });
-		btnViewLibrarian.setFont(new Font("TComic Sana", Font.PLAIN, 15));
+		btnViewLibrarian.setFont(new Font("Sans-Serif", Font.PLAIN, 15));
 		
 		JButton btnDeleteLibrarian = new JButton("Delete Librarian");
 		btnDeleteLibrarian.addActionListener((ActionEvent e) -> {
