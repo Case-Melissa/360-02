@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="app" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@android:color/holo_blue_bright</item>
+        <item name="android:navigationBarColor">@android:color/holo_blue_light</item>
+        <item name="android:statusBarColor">?android:attr/colorAccent</item>
+    </style>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnLogout" type="id" />
+    <item name="txtUser" type="id">username</item>
+    <item name="txtPass" type="id">password</item>
+    <item name="button1" type="id" />
+</resources>
